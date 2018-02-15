@@ -5,8 +5,8 @@ RSpec.describe OpenBD do
   let(:source) { JSON.parse(File.read("spec/data/9784062206976.json")) }
   let(:resource) { OpenBD::Resource.new(source) }
 
-  describe "#content" do
-    subject { resource.content }
+  describe "#contents" do
+    subject { resource.contents }
     it { is_expected.to eq "ＴＯＥＩＣ　Ｌ＆Ｒの頻出単語が効率よく学べる！あのベストセラー語句集のハンディ版がついに登場！" }
   end
 

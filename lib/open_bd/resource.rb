@@ -6,15 +6,15 @@ module OpenBD
       @source = source
     end
 
-    def content
-      if !content_source.nil?
-        Content.new(content_source).content
+    def contents
+      if !contents_source.nil?
+        Contents.new(contents_source).contents
       end
     end
 
-    def content_detail
-      if !content_source.nil?
-        Content.new(content_source).content_detail
+    def contents_detail
+      if !contents_source.nil?
+        Contents.new(contents_source).contents_detail
       end
     end
 
@@ -62,8 +62,8 @@ module OpenBD
     end
 
     def table_of_contents
-      if !content_source.nil?
-        Content.new(content_source).table_of_contents
+      if !contents_source.nil?
+        Contents.new(contents_source).table_of_contents
       end
     end
 
@@ -77,7 +77,7 @@ module OpenBD
 
     private
 
-    def content_source
+    def contents_source
       source.dig("onix", "CollateralDetail", "TextContent")
     end
   end

@@ -1,19 +1,19 @@
 module OpenBD
-  class Content
+  class Contents
     attr_reader :source
 
     def initialize(source)
       @source = source
     end
 
-    def content
+    def contents
       value = source.find { |x| x["TextType"] == "02" }
       if !value.nil?
         value["Text"]
       end
     end
 
-    def content_detail
+    def contents_detail
       value = source.find { |x| x["TextType"] == "03" }
       if !value.nil?
         value["Text"]
