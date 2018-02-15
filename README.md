@@ -25,7 +25,7 @@ Or install it yourself as:
 ## Usage
 
 ```
-client = OpenBD.new
+client = OpenBD::Client.new
 # Pass the value of isbn to isbns
 res = client.search(isbns: [])
 
