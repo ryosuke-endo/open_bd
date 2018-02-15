@@ -1,4 +1,5 @@
 require "spec_helper"
+require "pry"
 
 RSpec.describe OpenBd do
   it "has a version number" do
