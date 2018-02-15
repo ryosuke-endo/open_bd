@@ -5,7 +5,7 @@ require "open_bd/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "open_bd"
-  spec.version       = OpenBd::VERSION
+  spec.version       = OpenBD::VERSION
   spec.authors       = ["ryosuke-endo"]
   spec.email         = ["frozen_faithjp2@yahoo.co.jp"]
 

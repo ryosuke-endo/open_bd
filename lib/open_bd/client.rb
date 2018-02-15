@@ -1,7 +1,7 @@
 require "faraday"
 require "faraday_middleware"
 
-module OpenBd
+module OpenBD
   class Client
     BASE_URL = "https://api.openbd.jp/".freeze
     VERSION = "v1".freeze
@@ -11,7 +11,7 @@ module OpenBd
     def search(isbns: [])
       query = [*isbns].join(',')
       response = connection.get(SEARCH_PATH, isbn: query)
-      OpenBd::Response.new(response)
+      OpenBD::Response.new(response)
     end
 
     private

@@ -1,4 +1,4 @@
-module OpenBd
+module OpenBD
   class Title
     attr_reader :source
 

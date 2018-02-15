@@ -1,9 +1,9 @@
 require "spec_helper"
 require "json"
 
-RSpec.describe OpenBd do
+RSpec.describe OpenBD do
   let(:source) { JSON.parse(File.read("spec/data/9784062206976.json")) }
-  let(:resource) { OpenBd::Resource.new(source) }
+  let(:resource) { OpenBD::Resource.new(source) }
 
   describe "#content" do
     subject { resource.content }
@@ -11,7 +11,7 @@ RSpec.describe OpenBd do
   end
 
   describe "#contributors" do
-    subject { resource.contributors.all? { |c| c.is_a?(OpenBd::Contributor) } }
+    subject { resource.contributors.all? { |c| c.is_a?(OpenBD::Contributor) } }
     it { is_expected.to be_truthy }
   end
 

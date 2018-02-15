@@ -1,4 +1,4 @@
-module OpenBd
+module OpenBD
   class Content
     attr_reader :source
 

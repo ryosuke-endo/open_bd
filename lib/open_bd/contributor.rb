@@ -1,4 +1,4 @@
-module OpenBd
+module OpenBD
   class Contributor
     attr_reader :source
 

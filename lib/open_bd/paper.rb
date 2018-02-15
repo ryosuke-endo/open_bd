@@ -1,4 +1,4 @@
-module OpenBd
+module OpenBD
   class Paper
     attr_reader :source
 

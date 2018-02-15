@@ -1,4 +1,4 @@
-module OpenBd
+module OpenBD
   class Response
     def initialize(response)
       @response = response
@@ -14,7 +14,7 @@ module OpenBd
 
     def resources
       body.map do |source|
-        OpenBd::Resource.new(source)
+        OpenBD::Resource.new(source)
       end
     end
 
