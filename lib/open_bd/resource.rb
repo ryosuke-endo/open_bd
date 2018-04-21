@@ -29,6 +29,10 @@ module OpenBD
       source.dig("summary", "cover")
     end
 
+    def hastameshiyomi
+      source.dig("hanmoto", "hastameshiyomi")
+    end
+
     def height
       Paper.new(source.dig("onix", "DescriptiveDetail")).height
     end

@@ -39,6 +39,7 @@ res.resources.each do |resource|
   res.content_detail
   res.contributors       # [OpenBD::Contributor]
   res.cover_image
+  res.hastameshiyomi
   res.height
   res.isbn
   res.main_title
