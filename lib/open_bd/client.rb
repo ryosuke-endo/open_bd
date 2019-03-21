@@ -7,11 +7,17 @@ module OpenBD
     VERSION = "v1".freeze
     URL = "#{BASE_URL}#{VERSION}".freeze
     SEARCH_PATH = "get"
+    COVERAGE_PATH = "coverage"
 
     def search(isbns: [])
       query = [*isbns].join(',')
       response = connection.get(SEARCH_PATH, isbn: query)
       OpenBD::Response.new(response)
+    end
+
+    def coverage
+      response = connection.get(COVERAGE_PATH)
+      response.body
     end
 
     private
