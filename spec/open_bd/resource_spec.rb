@@ -5,6 +5,11 @@ RSpec.describe OpenBD do
   let(:source) { JSON.parse(File.read("spec/data/9784062206976.json")) }
   let(:resource) { OpenBD::Resource.new(source) }
 
+  describe "#author" do
+    subject { resource.author }
+    it { is_expected.to eq "神崎正哉／著" }
+  end
+
   describe "#contents" do
     subject { resource.contents }
     it { is_expected.to eq "ＴＯＥＩＣ　Ｌ＆Ｒの頻出単語が効率よく学べる！あのベストセラー語句集のハンディ版がついに登場！" }
