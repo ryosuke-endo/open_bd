@@ -35,6 +35,7 @@ res.status
 
 # [OpenBD::Resource]
 res.resources.each do |resource|
+  res.author
   res.content
   res.content_detail
   res.contributors       # [OpenBD::Contributor]

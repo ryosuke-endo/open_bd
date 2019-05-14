@@ -6,6 +6,10 @@ module OpenBD
       @source = source
     end
 
+    def author
+      source.dig("summary", "author")
+    end
+
     def contents
       if !contents_source.nil?
         Contents.new(contents_source).contents
