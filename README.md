@@ -52,6 +52,9 @@ res.resources.each do |resource|
   res.title
   res.width
 end
+
+# Get openbd coverage
+client.coverage
 ```
 
 ## License
